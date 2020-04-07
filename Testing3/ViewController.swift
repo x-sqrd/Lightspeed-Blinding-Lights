@@ -14,7 +14,13 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+    @IBAction func onGoButton(_ sender: Any) {
+        performSegue(withIdentifier: "From1to2", sender: self)
+    }
+    
 
-
+    @IBAction func ToCredits(_ sender: Any) {
+        performSegue(withIdentifier: "ToCredits", sender: self)
+    }
 }
 
